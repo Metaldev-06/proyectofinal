@@ -29,6 +29,11 @@
           <li><a href="#">Proyectos</a></li>
         </ul>
       </nav>
+      <div class="header__burgerMenu">
+        <span class="span span1"></span>
+        <span class="span span2"></span>
+        <span class="span span3"></span>
+      </div>
     </header>
 
     <section class="hero">
@@ -37,6 +42,16 @@
         <p>Web Developer</p>
         <button>Ver CV</button>
       </article>
+    </section>
+
+    <section class="sidebar">
+      <ul class="sidebar__menu">
+        <li><a href="#">Sobre mi</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Formación</a></li>
+        <li><a href="#">Proyectos</a></li>
+      </ul>
     </section>
 
     <main class="container">
@@ -66,7 +81,29 @@
           />
         </article>
       </section>
+
+      <section class="skills">
+        <h2 class="title">Skills</h2>
+
+        <article class="skills__container--card" id="cardContainer"></article>
+      </section>
+
+      <section class="hobbies"></section>
+
+      <template id="templateCard">
+        <div class="skills__card">
+          <div class="skills__card--img">
+            <img src="" alt="Tecnologías" />
+          </div>
+          <div class="skills__card--content">
+            <p class="skills__card--content_title"></p>
+            <p class="skills__card--content_description"></p>
+          </div>
+          <!-- <div class="skills__card--effect"></div> -->
+        </div>
+      </template>
     </main>
+
     <script src="js/main.js"></script>
   </body>
 </html>

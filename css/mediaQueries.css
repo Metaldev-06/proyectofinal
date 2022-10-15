@@ -3,7 +3,6 @@
     .hero__content {
         font-size: 2.5rem;
     }
-
     .aboutMe {
         flex-direction: column;
         justify-content: center;
@@ -19,7 +18,12 @@
 }
 
 @media ( max-width: 680px ) {
-    
+    .header__menu {
+        display: none;
+    }
+    .header__burgerMenu {
+        display: block;
+    }
 }
 
 @media ( max-width: 480px ) {
