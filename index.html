@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Oracle - Portfolio - Fernando Diaz</title>
   </head>
   <body>
@@ -88,7 +93,13 @@
         <article class="skills__container--card" id="cardContainer"></article>
       </section>
 
-      <section class="hobbies"></section>
+      <section class="hobbies">
+        <h2 class="title">Hobbies</h2>
+        <article
+          class="hobbies__container--card sections"
+          id="cardContainerHobbies"
+        ></article>
+      </section>
 
       <template id="templateCard">
         <div class="skills__card">
@@ -100,6 +111,17 @@
             <p class="skills__card--content_description"></p>
           </div>
           <!-- <div class="skills__card--effect"></div> -->
+        </div>
+      </template>
+
+      <template id="templateCardHobbies">
+        <div class="skills__card">
+          <div class="skills__card--img">
+            <img src="" alt="Tecnologías" />
+          </div>
+          <div class="skills__card--content">
+            <p class="skills__card--content_title"></p>
+          </div>
         </div>
       </template>
     </main>
