@@ -21,17 +21,17 @@
     <title>Oracle - Portfolio - Fernando Diaz</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header degradado" id="header">
       <div class="header__logo">
         <h1>Metal<span>Dev</span></h1>
       </div>
       <nav>
         <ul class="header__menu">
-          <li><a href="#">Sobre mi</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Hobbies</a></li>
-          <li><a href="#">Formación</a></li>
-          <li><a href="#">Proyectos</a></li>
+          <li><a class="header__menu--option" href="#">Sobre mi</a></li>
+          <li><a class="header__menu--option" href="#">Skills</a></li>
+          <li><a class="header__menu--option" href="#">Hobbies</a></li>
+          <li><a class="header__menu--option" href="#">Formación</a></li>
+          <li><a class="header__menu--option" href="#">Proyectos</a></li>
         </ul>
       </nav>
       <div class="header__burgerMenu">
@@ -45,7 +45,7 @@
       <article class="hero__content">
         <h2>Fernando Diaz</h2>
         <p>Web Developer</p>
-        <button>Ver CV</button>
+        <button class="hero__btn">Ver CV</button>
       </article>
     </section>
 
@@ -60,17 +60,21 @@
     </section>
 
     <main class="container">
-      <section class="aboutMe">
+      <section class="aboutMe sections">
         <article class="aboutMe__text">
           <h2 class="title">Sobre mí</h2>
           <p>
-            Hola! Mi nombre es Fernando Diaz. Soy un desarrollador y estudiante
-            con experiencia en el área de desarrollo web. Me encanta aprender
-            nuevas tecnologías y frameworks para mejorar mis habilidades.
-            Siempre estoy armando proyectos para ver hasta donde puedo llegar y
-            poco a poco lograr mis metas, así que espero que pronto podramos
-            trabajar juntos!😁
+            Hola! Mi nombre es Fernando Diaz. Soy de Formosa Argentina, tengo 23
+            años y soy un desarrollador y estudiante con experiencia en el área
+            de desarrollo web.
           </p>
+          <p>
+            Me encanta aprender nuevas tecnologías y frameworks para mejorar mis
+            habilidades. Siempre estoy armando proyectos para ver hasta donde
+            puedo llegar y poco a poco lograr mis metas, así que espero que
+            pronto podramos trabajar juntos!😁
+          </p>
+
           <p>
             Actualmente a demás de participar del proyecto Oracle ONE en Alura
             Latam, estoy estudiando una Tecnicatura en Programación en TECLAB y
@@ -101,30 +105,62 @@
         ></article>
       </section>
 
-      <template id="templateCard">
-        <div class="skills__card">
-          <div class="skills__card--img">
-            <img src="" alt="Tecnologías" />
-          </div>
-          <div class="skills__card--content">
-            <p class="skills__card--content_title"></p>
-            <p class="skills__card--content_description"></p>
-          </div>
-          <!-- <div class="skills__card--effect"></div> -->
-        </div>
-      </template>
+      <section class="estudios">
+        <h2 class="title">Formación Académica</h2>
+        <article
+          class="estudios__container--card sections"
+          id="cardContainerEstudios"
+        ></article>
+      </section>
 
-      <template id="templateCardHobbies">
-        <div class="skills__card">
-          <div class="skills__card--img">
-            <img src="" alt="Tecnologías" />
-          </div>
-          <div class="skills__card--content">
-            <p class="skills__card--content_title"></p>
+      <section class="experiencia">
+        <h2 class="title">Experiencia Profesional</h2>
+        <article
+          class="experiencia__container sections"
+          id="sectionProyectos"
+        ></article>
+      </section>
+
+      <div class="scrollToTop" id="arrowUp">
+        <img src="assets/img/arrowUp.svg" />
+      </div>
+    </main>
+
+    <template id="templateCard">
+      <div class="template__card">
+        <div class="template__card--img">
+          <img src="" alt="Tecnologías" />
+        </div>
+        <div class="template__card--content">
+          <p class="template__card--content_title"></p>
+          <p class="template__card--content_description"></p>
+        </div>
+      </div>
+    </template>
+
+    <template id="templateExperiencia">
+      <div class="templateExperiencia">
+        <div class="templateExperiencia__img">
+          <img src="" alt="Proyectos" id="templateImg" />
+        </div>
+        <div class="templateExperiencia__content">
+          <h3 class="title" id="templateTitle"></h3>
+          <p id="templateDescription" class="templateDescription"></p>
+          <div class="templateExperiencia__content--buttons">
+            <a
+              class="hero__btn"
+              id="templateRepositorio"
+              href="#"
+              target="_blank"
+              >Repositorio</a
+            >
+            <a class="hero__btn" id="templateDemo" href="#" target="_blank"
+              >Ver demo</a
+            >
           </div>
         </div>
-      </template>
-    </main>
+      </div>
+    </template>
 
     <script src="js/main.js"></script>
   </body>

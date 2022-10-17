@@ -15,6 +15,19 @@
         width: 100%;
         text-align: center;
     }
+    .templateExperiencia {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .templateExperiencia:nth-child(even) {
+        flex-direction: column;
+    }
+    .templateExperiencia__content h3{ 
+        text-align: center;
+    }
+    .templateExperiencia__content--buttons {
+        justify-content: center;
+    }
 }
 
 @media ( max-width: 680px ) {
@@ -31,12 +44,30 @@
     .hero__content {
         font-size: 2rem;
     }
+
+    .templateExperiencia__content--buttons {
+        gap: 1rem;
+    }
 }
 
 @media ( max-width: 360px ) {
-
+    .container {
+        width: 95%;
+    }
     .hero__content {
         font-size: 1.5rem;
+    }
+    .aboutMe__text {
+        width: 100%;
+        min-width: 100%;
+    }
+    .aboutMe__img {
+        width: 80%;
+        text-align: center;
+    }
+    .templateExperiencia__content--buttons {
+        text-align: center;
+        flex-direction: column;
     }
     
 }
