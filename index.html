@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="home">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,18 +23,25 @@
   <body>
     <header class="header degradado" id="header">
       <div class="header__logo">
-        <h1>Metal<span>Dev</span></h1>
+        <h1 id="logo">Metal<span>Dev</span></h1>
       </div>
       <nav>
         <ul class="header__menu">
-          <li><a class="header__menu--option" href="#">Sobre mi</a></li>
-          <li><a class="header__menu--option" href="#">Skills</a></li>
-          <li><a class="header__menu--option" href="#">Hobbies</a></li>
-          <li><a class="header__menu--option" href="#">Formación</a></li>
-          <li><a class="header__menu--option" href="#">Proyectos</a></li>
+          <li><a class="header__menu--option" href="#aboutMe">Sobre mi</a></li>
+          <li><a class="header__menu--option" href="#skills">Skills</a></li>
+          <li><a class="header__menu--option" href="#hobbies">Hobbies</a></li>
+          <li>
+            <a class="header__menu--option" href="#estudios">Formación</a>
+          </li>
+          <li>
+            <a class="header__menu--option" href="#experiencia">Proyectos</a>
+          </li>
+          <li>
+            <a class="header__menu--option" href="#contactForm">Contacto</a>
+          </li>
         </ul>
       </nav>
-      <div class="header__burgerMenu">
+      <div class="header__burgerMenu" id="menuBurguer">
         <span class="span span1"></span>
         <span class="span span2"></span>
         <span class="span span3"></span>
@@ -49,18 +56,19 @@
       </article>
     </section>
 
-    <section class="sidebar">
+    <section class="sidebar" id="sidebar">
       <ul class="sidebar__menu">
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="#">Formación</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="#aboutMe">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#estudios">Formación</a></li>
+        <li><a href="#experiencia">Proyectos</a></li>
+        <li><a href="#contactForm">Contacto</a></li>
       </ul>
     </section>
 
     <main class="container">
-      <section class="aboutMe sections">
+      <section class="aboutMe sections" id="aboutMe">
         <article class="aboutMe__text">
           <h2 class="title">Sobre mí</h2>
           <p>
@@ -84,6 +92,7 @@
         </article>
         <article class="aboutMe__img">
           <img
+            class="shadow__img"
             src="assets/img/foto-perfil.jpg"
             alt="Fernando Diaz"
             title="Fernando Diaz"
@@ -91,13 +100,13 @@
         </article>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="title">Skills</h2>
 
         <article class="skills__container--card" id="cardContainer"></article>
       </section>
 
-      <section class="hobbies">
+      <section class="hobbies" id="hobbies">
         <h2 class="title">Hobbies</h2>
         <article
           class="hobbies__container--card sections"
@@ -105,7 +114,7 @@
         ></article>
       </section>
 
-      <section class="estudios">
+      <section class="estudios" id="estudios">
         <h2 class="title">Formación Académica</h2>
         <article
           class="estudios__container--card sections"
@@ -113,7 +122,7 @@
         ></article>
       </section>
 
-      <section class="experiencia">
+      <section class="experiencia" id="experiencia">
         <h2 class="title">Experiencia Profesional</h2>
         <article
           class="experiencia__container sections"
@@ -121,10 +130,47 @@
         ></article>
       </section>
 
+      <section class="contactForm" id="contactForm">
+        <h2 class="title">Contacto</h2>
+        <article class="contact__form--container sections">
+          <div class="contact__form--img">
+            <img src="assets/img/contacto.jpg" alt="" />
+          </div>
+          <div class="contact__form--content">
+            <h3>¿Quieres contactarme?</h3>
+            <p>
+              Complete el siguiente formulario y me pondre en contacto con usted
+              lo antes posible
+            </p>
+
+            <form action="" class="form">
+              <input
+                type="text"
+                placeholder="Ingrese su nombre"
+                maxlength="50"
+                required
+              />
+              <input type="email" placeholder="Correo" />
+              <input type="text" placeholder="Asunto" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button class="hero__btn" type="submit">Enviar</button>
+            </form>
+          </div>
+        </article>
+      </section>
+
       <div class="scrollToTop" id="arrowUp">
         <img src="assets/img/arrowUp.svg" />
       </div>
     </main>
+
+    <footer class="footer">&copy; Desing by Fernando Diaz - 2022</footer>
 
     <template id="templateCard">
       <div class="template__card">
@@ -162,6 +208,6 @@
       </div>
     </template>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 12vh;
 }
 
 * {
@@ -158,14 +159,14 @@ body::-webkit-scrollbar-thumb {
 .sidebar {
     width: 40vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    display: none;
+    background-color: var(--color-card);
+    z-index: 9;
 }
 .sidebar__menu {
     display: flex;
@@ -178,6 +179,9 @@ body::-webkit-scrollbar-thumb {
 }
 .sidebar__menu li:hover {
     transform: scale(1.2);
+}
+.active {
+    display: flex;
 }
 
 .hero {
@@ -303,7 +307,10 @@ body::-webkit-scrollbar-thumb {
     max-width: 400px;
     min-width: 200px;
     border-radius: .5rem;
+}
+.shadow__img {
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
 }
 
 .skills {
@@ -417,6 +424,57 @@ body::-webkit-scrollbar-thumb {
 .templateExperiencia__content--buttons .hero__btn {
     padding: 0.9em 1em;
 }
+
+
+.contact__form--container {
+    display: flex;
+    justify-content: space-around;
+}
+.contact__form--img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+}
+.contact__form--img img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.contact__form--content {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+.contact__form--content p {
+    margin-bottom: 2rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.form input {
+    width: 100%;
+    height: 2.5rem;
+}
+.form textarea, .form input{
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--color-text-secondary);
+    resize: none;
+    background-color: var(--color-card);
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .scrollToTop {
     position: fixed;
