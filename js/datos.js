@@ -1,72 +1,72 @@
 const tecnologias = [
   {
-    img: "../assets/img/icons8-html-5.svg",
+    img: "./assets/img/icons8-html-5.svg",
     title: "HTML",
     description:
       "HTML es el lenguaje de marcado de contenido para la creación de páginas web, permite la creación de páginas web dinámicas y estándarizadas.",
   },
   {
-    img: "../assets/img/icons8-css3.svg",
+    img: "./assets/img/icons8-css3.svg",
     title: "CSS",
     description:
       "CSS es un lenguaje de presentación de una página web, que define las presentaciones de los elementos de una página web.",
   },
   {
-    img: "../assets/img/icons8-oreja.svg",
+    img: "./assets/img/icons8-oreja.svg",
     title: "Bootstrap",
     description:
       "Bootstrap es un framework css de desarrollo de páginas web para el desarrollo de aplicaciones web.",
   },
   {
-    img: "../assets/img/icons8-sass.svg",
+    img: "./assets/img/icons8-sass.svg",
     title: "Sass",
     description:
       "Sass es un lenguaje de diseño de páginas web para el desarrollo de aplicaciones web.",
   },
   {
-    img: "../assets/img/icons8-javascript.svg",
+    img: "./assets/img/icons8-javascript.svg",
     title: "JavaScript",
     description:
       "JavaScript es un lenguaje de programación de alto nivel que se utiliza en la creación de páginas web interactivas y de aplicaciones web.",
   },
   {
-    img: "../assets/img/icons8-typescript.svg",
+    img: "./assets/img/icons8-typescript.svg",
     title: "TypeScript",
     description:
       "TypesScript es un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript.",
   },
   {
-    img: "../assets/img/angular.svg",
+    img: "./assets/img/angular.svg",
     title: "Angular",
     description:
       "Angular es una plataforma de desarrollo de aplicaciones web y móviles multiplataforma que se basa en una arquitectura de componentes.",
   },
   {
-    img: "../assets/img/icons8-node-js.svg",
+    img: "./assets/img/icons8-node-js.svg",
     title: "NodeJS",
     description:
       "NodeJS es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript.",
   },
   {
-    img: "../assets/img/icons8-express-js.svg",
+    img: "./assets/img/icons8-express-js.svg",
     title: "Express",
     description:
       "Express es un entorno de trabajo para aplicaciones web para el programario Node.js, de código abierto y con licencia MIT. Se utiliza para desarrollar aplicaciones web y APIs.",
   },
   {
-    img: "../assets/img/php-svgrepo-com.svg",
+    img: "./assets/img/php-svgrepo-com.svg",
     title: "PHP",
     description:
       "PHP es un lenguaje de programación de alto nivel de uso general que se adapta especialmente al desarrollo web.",
   },
   {
-    img: "../assets/img/icons8-postgresql.svg",
+    img: "./assets/img/icons8-postgresql.svg",
     title: "PostgreSQL",
     description:
       "PostgreSQL es un sistema gestor de base de datos relacional de código abierto.",
   },
   {
-    img: "../assets/img/icons8-logo-de-mysql.svg",
+    img: "./assets/img/icons8-logo-de-mysql.svg",
     title: "MySQL",
     description:
       "MySQL es un sistema gestor de base de datos relacional de código abierto.",
@@ -74,37 +74,37 @@ const tecnologias = [
 ];
 const hobbies = [
   {
-    img: "../assets/img/juego.svg",
+    img: "./assets/img/juego.svg",
     title: "Jugar Videojuegos",
     description:
       "Me gusta jugar videojuegos en mis tiempos libres, para poder relajarme y desconectarme de la rutina diaria.",
   },
   {
-    img: "../assets/img/musica.svg",
+    img: "./assets/img/musica.svg",
     title: "Escuchar Música",
     description:
       "Siempre que estudio, juego o programo me gusta escuchar música",
   },
   {
-    img: "../assets/img/tv.svg",
+    img: "./assets/img/tv.svg",
     title: "Ver Series",
     description:
       "Los fines de semanas o antes de dormir me gusta ver unos capítulos de mis series favoritas",
   },
   {
-    img: "../assets/img/programacion.svg",
+    img: "./assets/img/programacion.svg",
     title: "Programar",
     description:
       "Básicamente es lo que hago en la totalidad del día, programar y aprender nuevas tecnologías",
   },
   {
-    img: "../assets/img/libro.svg",
+    img: "./assets/img/libro.svg",
     title: "Leer Libros",
     description:
       "Aunque ahora es menos frecuente que antes, de vez en cuando me gusta leer un buen libro",
   },
   {
-    img: "../assets/img/correr.svg",
+    img: "./assets/img/correr.svg",
     title: "Salir a Caminar",
     description:
       "Actualmente me gusta salir a caminar por la mañana o a la tarde - noche, cuando el sol no está tan fuerte",
@@ -112,29 +112,29 @@ const hobbies = [
 ];
 const institutos = [
   {
-    img: "../assets/img/ucp.png",
+    img: "./assets/img/ucp.png",
     title: "Lic.En Sistemas de Información",
     description: "2020 - 2022",
   },
   {
-    img: "../assets/img/teclab.png",
+    img: "./assets/img/teclab.png",
     title: "Técnico Superior en Programación",
     description: "2022 - 2023",
   },
   {
-    img: "../assets/img/alura.svg",
+    img: "./assets/img/alura.svg",
     title: "Oracle Next - Formación en UX Design",
     description: "2022 - 2023",
   },
   {
-    img: "../assets/img/nucba.png",
+    img: "./assets/img/nucba.png",
     title: "Programación Web Full Stack",
     description: "2022 - 2023",
   },
 ];
 const proyectos = [
   {
-    img: "../assets/img/proyecto1.jpg",
+    img: "./assets/img/proyecto1.jpg",
     title: "GifTify",
     description:
       "Es una página web para buscar gif, usando la API de Giphy. Desarrollada con Angular, Sass y TypeScript.",
@@ -142,7 +142,7 @@ const proyectos = [
     demo: "https://giftify-app.netlify.app/",
   },
   {
-    img: "../assets/img/proyecto2.jpg",
+    img: "./assets/img/proyecto2.jpg",
     title: "Cande Fest",
     description:
       "Es una tarjeta de invitación digital para un XI años de Candela Rojas. Desarrollada con HTML, JavaScript y Sass.",
@@ -150,7 +150,7 @@ const proyectos = [
     demo: "https://candela-fest.netlify.app/",
   },
   {
-    img: "../assets/img/proyecto3.jpg",
+    img: "./assets/img/proyecto3.jpg",
     title: "Juego del Ahorcado",
     description:
       "Es el clásico juego del ahorcado, este es un proyecto de Oracle Next Education. Desarrollado con HTML, CSS y JavaScript.",
@@ -159,7 +159,7 @@ const proyectos = [
     demo: "https://metaldev-06.github.io/Juego-del-ahorcado-Alura-Challenges-Oracle-ONE/",
   },
   {
-    img: "../assets/img/proyecto4.jpg",
+    img: "./assets/img/proyecto4.jpg",
     title: "Desencriptador de Texto",
     description:
       "Es un sencillo encriptador y desencriptador de texto, este es un proyecto de Oracle Next Education. Desarrollado con HTML, CSS y JavaScript.",
@@ -168,7 +168,7 @@ const proyectos = [
     demo: "https://metaldev-06.github.io/Encriptador-de-texto-Alura-Challenges-Oracle-ONE/",
   },
   {
-    img: "../assets/img/landing-nucba.png",
+    img: "./assets/img/landing-nucba.png",
     title: "Landing Page Cafetería",
     description:
       "Un proyecto de NUCBA que consta de hacer una landing page de una cafetería. Desarrollado con HTML y CSS",
@@ -176,7 +176,7 @@ const proyectos = [
     demo: "https://langing-page-nucba.vercel.app/",
   },
   {
-    img: "../assets/img/portfolio-personal.png",
+    img: "./assets/img/portfolio-personal.png",
     title: "Portafolio Personal",
     description:
       "Es el portfolio que tengo actualmente, está desarrollado en Angular y Sass. Posee un dominio propio",
