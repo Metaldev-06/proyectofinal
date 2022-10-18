@@ -143,23 +143,40 @@
               lo antes posible
             </p>
 
-            <form action="" class="form">
-              <input
-                type="text"
-                placeholder="Ingrese su nombre"
-                maxlength="50"
-                required
-              />
-              <input type="email" placeholder="Correo" />
-              <input type="text" placeholder="Asunto" />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Mensaje"
-              ></textarea>
-              <button class="hero__btn" type="submit">Enviar</button>
+            <form id="form" action="" class="form" novalidate>
+              <div class="">
+                <input
+                  type="text"
+                  id="nombreForm"
+                  class="formControl"
+                  placeholder="Ingrese su nombre"
+                  maxlength="50"
+                  required
+                />
+                <small></small>
+              </div>
+              <div class="">
+                <input id="emailForm" type="email" placeholder="Correo" />
+                <small></small>
+              </div>
+              <div class="">
+                <input id="asuntoForm" type="text" placeholder="Asunto" />
+                <small></small>
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id="mensajeForm"
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensaje"
+                  maxlength="300"
+                ></textarea>
+                <small></small>
+              </div>
+              <button id="btnEnviar" class="hero__btn" type="submit">
+                Enviar
+              </button>
             </form>
           </div>
         </article>
