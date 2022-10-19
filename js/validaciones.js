@@ -29,6 +29,16 @@ const validaCampos = () => {
   } else {
     validaExito(mensajeForm);
   }
+
+  if (nombre && email && asunto && mensaje) {
+    form.reset();
+    console.log("Hola mundo");
+    modal.classList.add("activeModal");
+
+    setTimeout(() => {
+      modal.classList.remove("activeModal");
+    }, 2000);
+  }
 };
 
 const validaFalla = (input, msg) => {

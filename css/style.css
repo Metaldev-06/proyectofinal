@@ -437,7 +437,9 @@ body::-webkit-scrollbar-thumb {
     padding: 0.9em 1em;
 }
 
-
+.contactForm {
+    position: relative;
+}
 .contact__form--container {
     display: flex;
     justify-content: space-around;
@@ -500,6 +502,28 @@ body::-webkit-scrollbar-thumb {
 .form .success {
     display: none;
     
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 200px;
+    background: var(--color-gradient-button);
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    display: none;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.modal h2 {
+    color: var(--color-text);
+    
+}
+.activeModal {
+    display: flex;
 }
 
 .footer {

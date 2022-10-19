@@ -23,6 +23,7 @@ const emailForm = document.getElementById("emailForm");
 const asuntoForm = document.getElementById("asuntoForm");
 const mensajeForm = document.getElementById("mensajeForm");
 const btnEnviar = document.getElementById("btnEnviar");
+const modal = document.getElementById("modal");
 
 const cv = document.getElementById("cv");
 
