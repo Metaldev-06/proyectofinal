@@ -32,7 +32,6 @@ const validaCampos = () => {
 
   if (nombre && email && asunto && mensaje) {
     form.reset();
-    console.log("Hola mundo");
     modal.classList.add("activeModal");
 
     setTimeout(() => {
