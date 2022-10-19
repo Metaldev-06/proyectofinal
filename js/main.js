@@ -8,6 +8,7 @@ import {
   mostrarInstitutos,
   mostrarProyectos,
 } from "./datos.js";
+import { validaCampos } from "./validaciones.js";
 
 const header = document.getElementById("header");
 const logo = document.getElementById("logo");
@@ -22,6 +23,8 @@ const emailForm = document.getElementById("emailForm");
 const asuntoForm = document.getElementById("asuntoForm");
 const mensajeForm = document.getElementById("mensajeForm");
 const btnEnviar = document.getElementById("btnEnviar");
+
+const cv = document.getElementById("cv");
 
 mostrarDatos(tecnologias);
 mostrarHobbies(hobbies);
@@ -60,55 +63,6 @@ form.addEventListener("submit", (e) => {
   validaCampos();
 });
 
-const validaCampos = () => {
-  const nombre = nombreForm.value.trim();
-  const email = emailForm.value.trim();
-  const asunto = asuntoForm.value.trim();
-  const mensaje = mensajeForm.value;
-
-  if (!nombre) {
-    validaFalla(nombreForm, "El nombre es obligatorio");
-  } else {
-    validaExito(nombreForm);
-  }
-
-  if (!email) {
-    validaFalla(emailForm, "El email es obligatorio");
-  } else if (!validaEmail(email)) {
-    validaFalla(emailForm, "El email no es valido");
-  } else {
-    validaExito(emailForm);
-  }
-
-  if (!asunto) {
-    validaFalla(asuntoForm, "El asunto es obligatorio");
-  } else {
-    validaExito(asuntoForm);
-  }
-
-  if (!mensaje) {
-    validaFalla(mensajeForm, "El mensaje es obligatorio");
-  } else {
-    validaExito(mensajeForm);
-  }
-};
-
-const validaFalla = (input, msg) => {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-  small.textContent = msg;
-  small.className = "form__group fail";
-};
-
-const validaExito = (input) => {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-
-  small.className = "form__group success";
-};
-
-const validaEmail = (email) => {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
-};
+cv.addEventListener("click", () => {
+  window.open("./assets/pdf/CV-Diaz-Fernando.pdf");
+});

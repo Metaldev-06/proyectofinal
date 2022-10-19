@@ -22,9 +22,14 @@ html {
     text-decoration: none;
     color: var(--color-text);
 }
+*::selection {
+    background-color: #E80397;
+    color: white;
+}
 body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--color-background);
+    /* cursor: url(arrow-left.svg),auto */
 }
 
 body::-webkit-scrollbar {
@@ -48,8 +53,11 @@ body::-webkit-scrollbar-thumb {
     background: var(--color-gradient-button);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    user-select: none; 
 }
-
+.title::marker {
+    color: default;
+}
 .header {
     width: 100%;
     height: 12vh;
@@ -60,6 +68,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     z-index: 10;
     transition: all .3s;
+    user-select: none; 
 }
 
 .degradado {
@@ -68,6 +77,7 @@ body::-webkit-scrollbar-thumb {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8407738095238095) 100%);
     backdrop-filter: blur(10px);
+    user-select: none; 
 }
 
 .header__logo {
@@ -90,6 +100,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     gap: 1rem;
     font-weight: bold;
+    user-select: none; 
 }
 
 .header__menu--option {
@@ -197,6 +208,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
+    user-select: none; 
 }
 .hero__content h2 { 
     background: #4351FF;
@@ -496,6 +508,25 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer__redes{
+    font-size: 1.7rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.footer__redes a {
+    transition: transform .3s;
+    
+}
+.footer__redes a:hover {
+    transform: translateY(-5px);
+    background: #FD0048;
+    background: linear-gradient(to bottom, #FD0048 0%, #FF00B4 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
